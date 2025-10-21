@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial - Subir Tarea a Classroom</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      padding: 40px 0;
+    }
+
+    iframe {
+      width: 700px;
+      height: 5000px; /* ajusta según contenido */
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.15);
+      background-color: #fff;
+    }
+
+    /* Indicador de scroll */
+    .scroll-indicator {
+      position: fixed;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      color: #555;
+      z-index: 10;
+    }
+
+    .mouse {
+      width: 24px;
+      height: 40px;
+      border: 2px solid #555;
+      border-radius: 14px;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    .wheel {
+      width: 4px;
+      height: 8px;
+      background: #555;
+      border-radius: 2px;
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: scroll 1s infinite;
+    }
+
+    @keyframes scroll {
+      0% { top: 6px; opacity: 1; }
+      50% { top: 20px; opacity: 0.3; }
+      100% { top: 6px; opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    src="https://embed.app.guidde.com/playbooks/6CNHJz18TspXYTrmcdfBBb?mode=docOnly"
+    title="Cómo subir Tarea y Consideraciones Classroom">
+  </iframe>
+
+  <!-- Indicador de scroll -->
+  <div class="scroll-indicator">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+    <span>HACER SCROLL</span>
+  </div>
+</body>
+</html>
